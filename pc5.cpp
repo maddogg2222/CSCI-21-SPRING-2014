@@ -112,22 +112,29 @@ int main (int argc, char* argv[])
     
     int getStats(string s, int& alphaCount, int& digitCount)
     {
-            
+          digitCount = 0;
+           alphaCount = 0;
+            for(int i=0;i<s.length();i++)
+            {
+               if(isdigit(s[i]))
+                {
+                    digitCount++;
+                } //end if
+                else if(isalpha(s[i]))
+                {
+                    alphaCount++;
+                }//end else if
+                
+            }//end for
+           
             return(s.length());
+          
     }//end getStatus
     
     string buildMessage(string s, bool allCaps)
     {
+    return(s);
     
-      if(allCaps == false)
-    {
-       return("Message:" + s) ;
-    }
-      else if(allCaps == true)
-    {
-       
-    }//end if
-        
     }//end build message
 /*
  * Unit testing functions. Do not alter.

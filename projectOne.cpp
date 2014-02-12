@@ -25,6 +25,57 @@ int main (int argc, char* argv[])
 	
 	return 0;
 }
+void countCharacters (string theString, int& alpha, int& num)
+{
+    alpha=0;
+    num=0;
+    for(int i=0;i<theString.length();i++)
+    {
+     if(isdigit(theString[i]))
+        {
+            num++;
+        }//end if digit
+        
+     else if(isalpha(theString[i]))
+        {
+            alpha++;
+        }//end if digit
+    }//end for theString
+  
+}//end function countCharacters
+
+string upAndDown (string theString)
+{
+    
+    for(int i=0;i<theString.length();i++)
+    {
+        if(i%2)
+        {
+            tolower(theString[i]);
+        }
+        else
+        {
+            toupper(theString[i]);
+        }
+    }//end for i
+    return(theString);
+}//end function upAndDown
+int countWords (string theString)
+{
+    
+}//end function countWords
+int computeAverage (int values [], int arraySize)
+{
+    
+}//end function computeAverage
+int findMinValue (int values [], int arraySize)
+{
+    
+}//end function findMinValue
+int findMaxValue (int values [], int arraySize)
+{
+    
+}//end function findMaxValue
 
 /*
  * Unit testing functions. Do not alter.
